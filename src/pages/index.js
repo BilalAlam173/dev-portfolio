@@ -3,7 +3,7 @@ import * as React from "react"
 
 // styles
 const pageStyles = {
-  font: 'Arial',
+  height:'100%'
 }
 const navBar = {
   height: '100px',
@@ -109,11 +109,9 @@ const whiteLink = {
 }
 
 const aboutSection = {
-  height: '100vh',
   lineHeight: '1px',
-  padding: '50px 15% 0px 15%',
+  padding: '50px 15% 50px 15%',
   textAlign: 'center',
-  boxSizing: 'border-box',
   background: '#fafafa',
   heading: {
     color: 'black',
@@ -130,7 +128,7 @@ const aboutSection = {
 }
 
 const footerSection = {
-  height: '200px',
+  padding:'5%',
   textAlign: 'center',
   fontWeight: '400'
 }
@@ -142,7 +140,6 @@ const socialBox = {
 }
 const last = {
   fontWeight: '400',
-
 }
 
 
@@ -161,7 +158,8 @@ const IndexPage = () => {
           <li style={menuItem}>CONTACT</li>
         </ul>
       </div>
-      <div style={homeSection}>
+      <div class="container-fluid">
+      <div style={homeSection} class="row">
         <img style={banner} src="/logo.png"></img>
         <h1 style={greeting}>Hello<img style={hiImage} src="/hi.png"></img>, <br></br>
           <span>I'm <span style={name}>Bilal Alam</span></span>
@@ -170,7 +168,7 @@ const IndexPage = () => {
         <span style={teal}> |</span>  loves javascript <span style={teal}>|</span>  good at turning caffeine into code.</h2>
         <button style={readMoreBtn}>ABOUT ME</button>
       </div>
-      <div style={aboutSection}>
+      <div style={aboutSection} class="row">
         <h1 style={aboutSection.heading}>Education</h1>
 
         <h2 style={aboutSection.text}>
@@ -203,8 +201,8 @@ const IndexPage = () => {
         <h1>&nbsp;</h1>
         <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}>RESUME</button></a>
       </div>
-      <div style={footerSection}>
-        <h1 style={last}>Want me to solve a problem for you or just want to say hi? feel free to contact me ^_^ </h1>
+      <div style={footerSection} class="row">
+        <h3 style={last}>Want me to solve a problem for you or just want to say hi? feel free to contact me ^_^ </h3>
         <br />
         <div style={socialBox}>
           <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}>Linkedin</button></a>
@@ -216,6 +214,8 @@ const IndexPage = () => {
         </div>
 
       </div>
+      </div>
+    
     </main >
   )
 }
