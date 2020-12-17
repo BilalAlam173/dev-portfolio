@@ -27,7 +27,8 @@ const menu = {
 const menuItem = {
   display: 'inline',
   color: 'white',
-  fontSize: '20px',
+  fontSize: '15px',
+  fontWeight: '700',
   paddingRight: '20px'
 }
 
@@ -55,7 +56,7 @@ const description = {
   fontWeight: '200',
   maxWidth: '600px',
   lineHeight: '50px',
-  textAlign: 'left'
+  textAlign: 'left',
 }
 
 const teal = {
@@ -96,12 +97,20 @@ const banner = {
   marginLeft: '40%'
 }
 
+const descriptionSection = {
+  display:'flex',
+  flexDirection: 'column',
+  justifyContent:'space-evenly'
+}
+
 const homeSection = {
   height: '88vh',
   padding: '200px 15% 50px 15%',
   boxSizing: 'border-box',
   overflowX: 'hidden',
-  textAlign:'left'
+  textAlign:'left',
+  display:'flex',
+  flexDirection:'column'
 }
 const whiteLink = {
   color: 'white',
@@ -113,13 +122,15 @@ const aboutSection = {
   padding: '50px 15% 50px 15%',
   textAlign: 'center',
   background: '#fafafa',
+  display:'flex',
+  flexDirection: 'column',
   heading: {
     color: 'black',
     fontFamily: 'inherit',
     fontWeight: '700'
   },
   text: {
-    fontSize: '25px',
+    fontSize: '22px',
     fontWeight: '200',
     lineHeight: '50px',
     textAlign: 'center',
@@ -130,10 +141,13 @@ const aboutSection = {
 const footerSection = {
   padding:'5%',
   textAlign: 'center',
-  fontWeight: '400'
+  fontWeight: '400',
+  display: 'flex',
+  flexDirection: 'column'
 }
 const socialBox = {
   display: 'flex',
+  flexDirection:'row',
   flexWrap: 'wrap',
   justifyContent: 'space-evenly',
   alignItems: 'center'
@@ -160,13 +174,17 @@ const IndexPage = () => {
       </div>
       <div class="container-fluid">
       <div style={homeSection} class="row">
+        <div class="row">
         <img style={banner} src="/logo.png"></img>
         <h1 style={greeting}>Hello<img style={hiImage} src="/hi.png"></img>, <br></br>
           <span>I'm <span style={name}>Bilal Alam</span></span>
         </h1>
+        </div>
+        <div class="row" style={descriptionSection}>
         <h2 style={description}>A full-stack developer <span style={teal}>|</span> Computer Science graduate
         <span style={teal}> |</span>  loves javascript <span style={teal}>|</span>  good at turning caffeine into code.</h2>
         <button style={readMoreBtn}>ABOUT ME</button>
+        </div>
       </div>
       <div style={aboutSection} class="row">
         <h1 style={aboutSection.heading}>Education</h1>
@@ -187,7 +205,7 @@ const IndexPage = () => {
 
         <h2 style={aboutSection.text}>
           <div> I have <span style={highlight}>4 years</span> of professional experience. I started while still undergrad, as a part-time <span style={highlight}>front-end developer</span>
-          where enterprise applications for 2 years, involving technologies like <code>
+            , where I worked on enterprise web applications for 2 years, involving technologies like <code>
               angularjs, angular 2+, jquery, javascript, serverless architecture, sql, no-sql, python, mongodb
           </code>
             <br></br>
