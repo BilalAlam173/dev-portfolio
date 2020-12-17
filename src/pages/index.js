@@ -54,7 +54,6 @@ const name = {
 const description = {
   fontSize: '30px',
   fontWeight: '200',
-  maxWidth: '600px',
   lineHeight: '50px',
   textAlign: 'left',
 }
@@ -100,12 +99,12 @@ const banner = {
 const descriptionSection = {
   display:'flex',
   flexDirection: 'column',
-  justifyContent:'space-evenly'
+  maxWidth: '600px',
 }
 
 const homeSection = {
-  height: '88vh',
-  padding: '200px 15% 50px 15%',
+  // height: '88vh',
+  padding: '200px 15% 18% 15%',
   boxSizing: 'border-box',
   overflowX: 'hidden',
   textAlign:'left',
@@ -186,7 +185,7 @@ const IndexPage = () => {
         <button style={readMoreBtn}>ABOUT ME</button>
         </div>
       </div>
-      <div style={aboutSection} class="row">
+      <div style={aboutSection} class="row" id="about">
         <h1 style={aboutSection.heading}>Education</h1>
 
         <h2 style={aboutSection.text}>
@@ -219,7 +218,7 @@ const IndexPage = () => {
         <h1>&nbsp;</h1>
         <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}>RESUME</button></a>
       </div>
-      <div style={footerSection} class="row">
+      <div style={footerSection} class="row" id="contact">
         <h3 style={last}>Want me to solve a problem for you or just want to say hi? feel free to contact me ^_^ </h3>
         <br />
         <div style={socialBox}>
