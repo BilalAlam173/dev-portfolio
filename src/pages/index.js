@@ -1,5 +1,12 @@
 import { white } from "chalk"
 import * as React from "react"
+import { FaTelegramPlane } from "@react-icons/all-files/fa/FaTelegramPlane";
+import { FaStackOverflow } from "@react-icons/all-files/fa/FaStackOverflow";
+import { FaTwitterSquare } from "@react-icons/all-files/fa/FaTwitterSquare";
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+import { FaMedium } from "@react-icons/all-files/fa/FaMedium";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 
 // styles
 const pageStyles = {
@@ -78,12 +85,13 @@ const readMoreBtn = {
   outline: 'none',
   background: '#009688',
   color: 'white',
-  fontSize: '1.1rem',
+  fontSize: '12px',
+  fontWeight:'700',
   fontFamily: 'inherit',
   border: '1px transparent',
   borderRadius: '10rem',
-  height: '50px',
-  width: '180px',
+  height: '40px',
+  width: '130px',
   boxShadow: '0px 8px 15px rgba(0,0,0,0.15)',
   display: 'inline'
 }
@@ -149,7 +157,13 @@ const socialBox = {
   flexDirection:'row',
   flexWrap: 'wrap',
   justifyContent: 'space-evenly',
-  alignItems: 'center'
+  alignItems: 'center',
+  alignContent: 'center'
+}
+
+const socialLink = {
+  padding: '5px',
+  textDecoration: 'None'
 }
 const last = {
   fontWeight: '400',
@@ -216,18 +230,18 @@ const IndexPage = () => {
           <div> Currently, I am working as a <span style={highlight}>Full-stack developer</span> at <a target="_blank" href="https://www.venturedive.com"> VentureDive</a></div>
         </h2>
         <h1>&nbsp;</h1>
-        <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}>RESUME</button></a>
+        <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}><FaTelegramPlane /> RESUME</button></a>
       </div>
       <div style={footerSection} class="row" id="contact">
         <h3 style={last}>Want me to solve a problem for you or just want to say hi? feel free to contact me ^_^ </h3>
         <br />
         <div style={socialBox}>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}>Linkedin</button></a>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}>Stackoverflow</button></a>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}>Github</button></a>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}>Twitter</button></a>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}>Medium</button></a>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}>Email</button></a>
+          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaLinkedin/> Linkedin</button></a>
+          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaStackOverflow/>  Stackoverflow</button></a>
+          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaGithub/>  Github</button></a>
+          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaTwitterSquare/>  Twitter</button></a>
+          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaMedium/>  Medium</button></a>
+          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaEnvelope/>  Email</button></a>
         </div>
 
       </div>
