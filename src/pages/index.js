@@ -7,7 +7,8 @@ import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
 import { FaMedium } from "@react-icons/all-files/fa/FaMedium";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
-
+import scrollTo from 'gatsby-plugin-smoothscroll';
+import { Link}  from 'react';
 // styles
 const pageStyles = {
   height:'100%'
@@ -36,7 +37,8 @@ const menuItem = {
   color: 'white',
   fontSize: '15px',
   fontWeight: '700',
-  paddingRight: '20px'
+  paddingRight: '20px',
+  textDecoration:'None'
 }
 
 
@@ -181,8 +183,8 @@ const IndexPage = () => {
           <img src="/logo.png"></img>
         </div>
         <ul style={menu}>
-          <li style={menuItem}>ABOUT ME</li>
-          <li style={menuItem}>CONTACT</li>
+          <a style={menuItem} href="javascript:void(0)" onClick={()=> scrollTo('#about')}>ABOUT ME</a>
+          <a style={menuItem} href="javascript:void(0)" onClick={()=> scrollTo('#contact')}>CONTACT</a>
         </ul>
       </div>
       <div class="container-fluid">
@@ -236,12 +238,12 @@ const IndexPage = () => {
         <h3 style={last}>Want me to solve a problem for you or just want to say hi? feel free to contact me ^_^ </h3>
         <br />
         <div style={socialBox}>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaLinkedin/> Linkedin</button></a>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaStackOverflow/>  Stackoverflow</button></a>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaGithub/>  Github</button></a>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaTwitterSquare/>  Twitter</button></a>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaMedium/>  Medium</button></a>
-          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing" style={socialLink}><button style={readMoreBtn}><FaEnvelope/>  Email</button></a>
+          <a style={whiteLink} target="_blank" href="https://www.linkedin.com/in/bilal-alam/" style={socialLink}><button style={readMoreBtn}><FaLinkedin/> Linkedin</button></a>
+          <a style={whiteLink} target="_blank" href="https://stackoverflow.com/users/5894620/bilal-alam" style={socialLink}><button style={readMoreBtn}><FaStackOverflow/>  Stackoverflow</button></a>
+          <a style={whiteLink} target="_blank" href="https://github.com/BilalAlam173" style={socialLink}><button style={readMoreBtn}><FaGithub/>  Github</button></a>
+          <a style={whiteLink} target="_blank" href="https://twitter.com/Bilal1alam" style={socialLink}><button style={readMoreBtn}><FaTwitterSquare/>  Twitter</button></a>
+          <a style={whiteLink} target="_blank" href="https://medium.com/@bilalalam173" style={socialLink}><button style={readMoreBtn}><FaMedium/>  Medium</button></a>
+          <a style={whiteLink} target="_blank" href="mailto:bilalalam173@gmail.com" style={socialLink}><button style={readMoreBtn}><FaEnvelope/>  Email</button></a>
         </div>
 
       </div>
