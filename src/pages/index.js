@@ -114,7 +114,7 @@ const descriptionSection = {
 
 const homeSection = {
   // height: '88vh',
-  padding: '200px 15% 18% 15%',
+  padding: '120px 15% 18% 15%',
   boxSizing: 'border-box',
   overflowX: 'hidden',
   textAlign:'left',
