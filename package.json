@@ -19,9 +19,11 @@
     "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^4.5.3",
     "gatsby": "^2.26.1",
+    "gatsby-plugin-react-helmet": "^5.2.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.1.0",
     "smooth-scroll": "^16.1.3"
   }
