@@ -8,6 +8,7 @@ import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
 import { FaMedium } from "@react-icons/all-files/fa/FaMedium";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { Helmet } from "react-helmet"
 import { Link } from 'react';
 // styles
 const pageStyles = {
@@ -177,8 +178,11 @@ const last = {
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Bilal Alam</title>
-      <meta name="google-site-verification" content="T63g_RMEFr-2zYFzg0motmQxKmzH7axVQRNzQhDrD1k" />
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Bilal Alam</title>
+        <meta name="google-site-verification" content="T63g_RMEFr-2zYFzg0motmQxKmzH7axVQRNzQhDrD1k" />
+      </Helmet>
       <div style={navBar}>
         <div style={logoContainer}>
           <img src="/logo.png"></img>
