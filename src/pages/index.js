@@ -8,10 +8,10 @@ import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
 import { FaMedium } from "@react-icons/all-files/fa/FaMedium";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import { Link}  from 'react';
+import { Link } from 'react';
 // styles
 const pageStyles = {
-  height:'100%'
+  height: '100%'
 }
 const navBar = {
   height: '100px',
@@ -38,7 +38,7 @@ const menuItem = {
   fontSize: '15px',
   fontWeight: '700',
   paddingRight: '20px',
-  textDecoration:'None'
+  textDecoration: 'None'
 }
 
 
@@ -88,7 +88,7 @@ const readMoreBtn = {
   background: '#009688',
   color: 'white',
   fontSize: '12px',
-  fontWeight:'700',
+  fontWeight: '700',
   fontFamily: 'inherit',
   border: '1px transparent',
   borderRadius: '10rem',
@@ -107,7 +107,7 @@ const banner = {
 }
 
 const descriptionSection = {
-  display:'flex',
+  display: 'flex',
   flexDirection: 'column',
   maxWidth: '600px',
 }
@@ -117,9 +117,9 @@ const homeSection = {
   padding: '120px 15% 18% 15%',
   boxSizing: 'border-box',
   overflowX: 'hidden',
-  textAlign:'left',
-  display:'flex',
-  flexDirection:'column'
+  textAlign: 'left',
+  display: 'flex',
+  flexDirection: 'column'
 }
 const whiteLink = {
   color: 'white',
@@ -131,7 +131,7 @@ const aboutSection = {
   padding: '50px 15% 50px 15%',
   textAlign: 'center',
   background: '#fafafa',
-  display:'flex',
+  display: 'flex',
   flexDirection: 'column',
   heading: {
     color: 'black',
@@ -148,7 +148,7 @@ const aboutSection = {
 }
 
 const footerSection = {
-  padding:'5%',
+  padding: '5%',
   textAlign: 'center',
   fontWeight: '400',
   display: 'flex',
@@ -156,7 +156,7 @@ const footerSection = {
 }
 const socialBox = {
   display: 'flex',
-  flexDirection:'row',
+  flexDirection: 'row',
   flexWrap: 'wrap',
   justifyContent: 'space-evenly',
   alignItems: 'center',
@@ -178,77 +178,78 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <title>Bilal Alam</title>
+      <meta name="google-site-verification" content="T63g_RMEFr-2zYFzg0motmQxKmzH7axVQRNzQhDrD1k" />
       <div style={navBar}>
         <div style={logoContainer}>
           <img src="/logo.png"></img>
         </div>
         <ul style={menu}>
-          <a style={menuItem} href="javascript:void(0)" onClick={()=> scrollTo('#about')}>ABOUT ME</a>
-          <a style={menuItem} href="javascript:void(0)" onClick={()=> scrollTo('#contact')}>CONTACT</a>
+          <a style={menuItem} href="javascript:void(0)" onClick={() => scrollTo('#about')}>ABOUT ME</a>
+          <a style={menuItem} href="javascript:void(0)" onClick={() => scrollTo('#contact')}>CONTACT</a>
         </ul>
       </div>
       <div class="container-fluid">
-      <div style={homeSection} class="row">
-        <div class="row">
-        <img style={banner} src="/logo.png"></img>
-        <h1 style={greeting}>Hello<img style={hiImage} src="/hi.png"></img>, <br></br>
-          <span>I'm <span style={name}>Bilal Alam</span></span>
-        </h1>
-        </div>
-        <div class="row" style={descriptionSection}>
-        <h2 style={description}>A full-stack developer <span style={teal}>|</span> Computer Science graduate
-        <span style={teal}> |</span>  loves javascript <span style={teal}>|</span>  good at turning caffeine into code.</h2>
-        <button style={readMoreBtn}>ABOUT ME</button>
-        </div>
-      </div>
-      <div style={aboutSection} class="row" id="about">
-        <h1 style={aboutSection.heading}>Education</h1>
-
-        <h2 style={aboutSection.text}>
-          <div>My Computer Science Journey started when I enrolled in <span style={highlight}>BS Computer Science</span> programme
-          at <span style={highlight}>University of Karachi</span> in <code>January, 2015</code>, from where I graduated
-          in <code>December 2018.</code></div>
-          <div>During my time there, I studied core academic subjects in Computer Science/STEM and a few electives</div>
-          <div>including <code>OOP, Data Structures, DBMS, Networking, Operating Systems, Parallel Computing, Computer Graphics with openGL, Text mining with python.</code></div>
-          <div>I built several <span style={highlight}>interesting projects</span></div>
-          <div>including an Inventory Management System <code>(java, JDBC, Mysql)</code></div>
-          <span style={teal}> | </span>Blogging site <code>(angularjs, php, mysql)</code>
-          <span style={teal}> | </span>MS Paint clone <code>(OpenGL, C++)</code><span style={teal}> | </span>
-          Pocket Accountant; Mobile App <code>(MEAN stack, ionic, speech recognition)</code>
-        </h2>
-        <h1 style={aboutSection.heading}>Career</h1>
-
-        <h2 style={aboutSection.text}>
-          <div> I have <span style={highlight}>4 years</span> of professional experience. I started while still undergrad, as a part-time <span style={highlight}>front-end developer</span>
-            , where I worked on enterprise web applications for 2 years, involving technologies like <code>
-              angularjs, angular 2+, jquery, javascript, serverless architecture, sql, no-sql, python, mongodb
-          </code>
-            <br></br>
-          Meanwhile I did <span style={highlight}>freelancing</span> too, I completed three web and one mobile apps for multiple clients
-          involving technologies like <code>MEAN stack</code></div>
-          <div>After graduation, I joined a renowned product based company as a full-time software engineer, where I worked on multiple
-            products and technologies like <code>Angular, StencilJs, Chrome extensions, MS word Add-ins, Apache Spark, Java Servlets</code>
+        <div style={homeSection} class="row">
+          <div class="row">
+            <img style={banner} src="/logo.png"></img>
+            <h1 style={greeting}>Hello<img style={hiImage} src="/hi.png"></img>, <br></br>
+              <span>I'm <span style={name}>Bilal Alam</span></span>
+            </h1>
           </div>
-          <div> Currently, I am working as a <span style={highlight}>Full-stack developer</span> at <a target="_blank" href="https://www.venturedive.com"> VentureDive</a></div>
-        </h2>
-        <h1>&nbsp;</h1>
-        <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}><FaTelegramPlane /> RESUME</button></a>
-      </div>
-      <div style={footerSection} class="row" id="contact">
-        <h3 style={last}>Want me to solve a problem for you or just want to say hi? feel free to contact me ^_^ </h3>
-        <br />
-        <div style={socialBox}>
-          <a style={whiteLink} target="_blank" href="https://www.linkedin.com/in/bilal-alam/" style={socialLink}><button style={readMoreBtn}><FaLinkedin/> Linkedin</button></a>
-          <a style={whiteLink} target="_blank" href="https://stackoverflow.com/users/5894620/bilal-alam" style={socialLink}><button style={readMoreBtn}><FaStackOverflow/>  Stackoverflow</button></a>
-          <a style={whiteLink} target="_blank" href="https://github.com/BilalAlam173" style={socialLink}><button style={readMoreBtn}><FaGithub/>  Github</button></a>
-          <a style={whiteLink} target="_blank" href="https://twitter.com/Bilal1alam" style={socialLink}><button style={readMoreBtn}><FaTwitterSquare/>  Twitter</button></a>
-          <a style={whiteLink} target="_blank" href="https://medium.com/@bilalalam173" style={socialLink}><button style={readMoreBtn}><FaMedium/>  Medium</button></a>
-          <a style={whiteLink} target="_blank" href="mailto:bilalalam173@gmail.com" style={socialLink}><button style={readMoreBtn}><FaEnvelope/>  Email</button></a>
+          <div class="row" style={descriptionSection}>
+            <h2 style={description}>A full-stack developer <span style={teal}>|</span> Computer Science graduate
+              <span style={teal}> |</span>  loves javascript <span style={teal}>|</span>  good at turning caffeine into code.</h2>
+            <button style={readMoreBtn}>ABOUT ME</button>
+          </div>
         </div>
+        <div style={aboutSection} class="row" id="about">
+          <h1 style={aboutSection.heading}>Education</h1>
 
+          <h2 style={aboutSection.text}>
+            <div>My Computer Science Journey started when I enrolled in <span style={highlight}>BS Computer Science</span> programme
+              at <span style={highlight}>University of Karachi</span> in <code>January, 2015</code>, from where I graduated
+              in <code>December 2018.</code></div>
+            <div>During my time there, I studied core academic subjects in Computer Science/STEM and a few electives</div>
+            <div>including <code>OOP, Data Structures, DBMS, Networking, Operating Systems, Parallel Computing, Computer Graphics with openGL, Text mining with python.</code></div>
+            <div>I built several <span style={highlight}>interesting projects</span></div>
+            <div>including an Inventory Management System <code>(java, JDBC, Mysql)</code></div>
+            <span style={teal}> | </span>Blogging site <code>(angularjs, php, mysql)</code>
+            <span style={teal}> | </span>MS Paint clone <code>(OpenGL, C++)</code><span style={teal}> | </span>
+            Pocket Accountant; Mobile App <code>(MEAN stack, ionic, speech recognition)</code>
+          </h2>
+          <h1 style={aboutSection.heading}>Career</h1>
+
+          <h2 style={aboutSection.text}>
+            <div> I have <span style={highlight}>4 years</span> of professional experience. I started while still undergrad, as a part-time <span style={highlight}>front-end developer</span>
+              , where I worked on enterprise web applications for 2 years, involving technologies like <code>
+                angularjs, angular 2+, jquery, javascript, serverless architecture, sql, no-sql, python, mongodb
+              </code>
+              <br></br>
+              Meanwhile I did <span style={highlight}>freelancing</span> too, I completed three web and one mobile apps for multiple clients
+              involving technologies like <code>MEAN stack</code></div>
+            <div>After graduation, I joined a renowned product based company as a full-time software engineer, where I worked on multiple
+              products and technologies like <code>Angular, StencilJs, Chrome extensions, MS word Add-ins, Apache Spark, Java Servlets</code>
+            </div>
+            <div> Currently, I am working as a <span style={highlight}>Full-stack developer</span> at <a target="_blank" href="https://www.venturedive.com"> VentureDive</a></div>
+          </h2>
+          <h1>&nbsp;</h1>
+          <a style={whiteLink} target="_blank" href="https://drive.google.com/file/d/1VB8Z195w5z8jn1MhjzNB6-KNI98O1-bb/view?usp=sharing"><button style={readMoreBtn}><FaTelegramPlane /> RESUME</button></a>
+        </div>
+        <div style={footerSection} class="row" id="contact">
+          <h3 style={last}>Want me to solve a problem for you or just want to say hi? feel free to contact me ^_^ </h3>
+          <br />
+          <div style={socialBox}>
+            <a style={whiteLink} target="_blank" href="https://www.linkedin.com/in/bilal-alam/" style={socialLink}><button style={readMoreBtn}><FaLinkedin /> Linkedin</button></a>
+            <a style={whiteLink} target="_blank" href="https://stackoverflow.com/users/5894620/bilal-alam" style={socialLink}><button style={readMoreBtn}><FaStackOverflow />  Stackoverflow</button></a>
+            <a style={whiteLink} target="_blank" href="https://github.com/BilalAlam173" style={socialLink}><button style={readMoreBtn}><FaGithub />  Github</button></a>
+            <a style={whiteLink} target="_blank" href="https://twitter.com/Bilal1alam" style={socialLink}><button style={readMoreBtn}><FaTwitterSquare />  Twitter</button></a>
+            <a style={whiteLink} target="_blank" href="https://medium.com/@bilalalam173" style={socialLink}><button style={readMoreBtn}><FaMedium />  Medium</button></a>
+            <a style={whiteLink} target="_blank" href="mailto:bilalalam173@gmail.com" style={socialLink}><button style={readMoreBtn}><FaEnvelope />  Email</button></a>
+          </div>
+
+        </div>
       </div>
-      </div>
-    
+
     </main >
   )
 }
